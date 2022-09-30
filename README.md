@@ -1,1 +1,1 @@
-# 2022-polytech-orekhov
+My favourite quote is: carpe diem
