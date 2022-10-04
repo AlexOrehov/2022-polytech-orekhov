@@ -1,5 +1,5 @@
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required(VERSION 3.16)
+project(binary VERSION 1.0 LANGUAGES CXX)
 
-project ("Binary_Search")
-
-add_executable (binary_search binary.cpp)
+set(CMAKE_CXX_STANDARD 14)
+add_executable( 04_search_sort/intro/binary/binary.cpp)
