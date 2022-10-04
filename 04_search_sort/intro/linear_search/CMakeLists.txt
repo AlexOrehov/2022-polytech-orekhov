@@ -1,5 +1,5 @@
-make_minimum_required (VERSION 3.8)
+cmake_minimum_required(VERSION 3.16)
+project(linear.cpp VERSION 1.0 LANGUAGES CXX)
 
-project ("Linear_search")
-
-add_executable (Linear_search linear.cpp)
+set(CMAKE_CXX_STANDARD 14)
+add_executable( 04_search_sort/intro/linear_search/linear.cpp)
