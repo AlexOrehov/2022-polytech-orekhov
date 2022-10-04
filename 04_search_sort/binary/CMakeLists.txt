@@ -1,5 +1,5 @@
-cmake_minimum_required ()
+cmake_minimum_required(VERSION 3.16)
+project(Binary_search VERSION 1.0 LANGUAGES CXX)
 
-project (Binary_No_Recurtion)
-
-add_executable (binary_f.cpp bin.cpp)
+set(CMAKE_CXX_STANDARD 14)
+add_executable( bin.cpp binary_f.cpp)
