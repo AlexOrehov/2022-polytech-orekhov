@@ -1,49 +1,17 @@
 #include <iostream>
-using namespace std;
+#include "calculator.h"
 
 int main()
 {
-    char o;
-    float n1, n2, n12;
-
-    cout << "Enter the operator (+, -, *, /, ^): ";
-    cin >> o;
-
-    cout << "Enter the operands: ";
-    cin >> n1 >> n2;
-
-    n12 = n1;
-
-    switch (o) {
-
-    case '+':
-        cout << n1 << " + " << n2 << " = " << n1 + n2;
-        break;
-
-    case '-':
-        cout << n1 << " - " << n2 << " = " << n1 - n2;
-        break;
-
-    case '*':
-        cout << n1 << " * " << n2 << " = " << n1 * n2;
-        break;
-
-    case '/':
-        cout << n1 << " / " << n2 << " = " << n1 / n2;
-        break;
-
-    case '^':
-        for (int i = 1; i < n2; i++) {
-            n12 = n12 * n1;
-        }
-        cout << n1 << " ^ " << n2 << " = " << n12;
-        break;
-
-    default:
-        cout << "Mistake! The menu item is missing?";
-        break;
+    double a, b, result;
+    char $;
+    std::cout << "Calculator\n Enter exercise in a $ b operation\n";
+    while (true)
+    {
+        std::cin >> a >> $ >> b;
+        result = calculate(a, $, b);
+        std::cout << a << $ << b << "=" << result << std::endl;
     }
-
     return 0;
 
 }
