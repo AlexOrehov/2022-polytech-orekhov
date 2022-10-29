@@ -3,4 +3,4 @@ project(hello LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Hello.cpp)
+add_executable(hello Hello.cpp)
