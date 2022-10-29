@@ -3,4 +3,4 @@ project(Evklid)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(gcd Evklid.cpp)
+add_executable(Evklid Evklid.cpp)
