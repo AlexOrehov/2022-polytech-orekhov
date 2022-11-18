@@ -1,7 +1,7 @@
-#include <chrono>
+#include <chrono>  // The main function for measuring the elapsed time of a C++ programme
 #include <fstream>
 #include <iostream>
-#include <thread>
+#include <thread>  //The main class for creating new threads in C++
 
 void get_cpuinfo(unsigned long long int fields[]) {
     char line[3];
