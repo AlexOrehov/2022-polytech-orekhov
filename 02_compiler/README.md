@@ -24,11 +24,11 @@ g++ -O3 complex.cpp
 sum=4e+38 ./a.out 0,20s user 0,00s system 29% cpu 0,736 total 35K 20 окт 22:31 a.out
 
 g++ -Os complex.cpp
-sum=4e+38 ./a.out 0,18s user 0,00s system 47% cpu 0,411
+sum=4e+38 ./a.out 0,23s user 0,00s system 47% cpu 0,411
 35K 20 окт 22:33 a.out
 
 g++ -Ofast complex.cpp
-sum=4e+38 ./a.out 0,23s user 0,00s system 50% cpu 0,464
+sum=4e+38 ./a.out 0,18s user 0,00s system 50% cpu 0,464
 35K 20 окт 22:34 a.out
 
 g++ -Og complex.cpp
@@ -45,6 +45,6 @@ a.out: file format mach-o arm64
 
 Sections: Idx Name Size VMA Type 0 __text 00000400 0000000100003a1c TEXT 1 __stubs 000000cc 0000000100003e1c TEXT 2 __gcc_except_tab 0000007c 0000000100003ee8 DATA 3 __cstring 00000005 0000000100003f64 DATA 4 __unwind_info 00000094 0000000100003f6c DATA 5 __got 000000a0 0000000100004000 DATA
 
-Итог: самое медленное выполнение программы с флагом -O0. Самое быстрое выполнение программы с флагом -Os
+Итог: самое медленное выполнение программы с флагом -O0. Самое быстрое выполнение программы с флагом -Ofast
 Самая большая нагрузка на процессор при выполнении программы у флага -Oz. Программа становится больше
 компиляции флагов -O0 -O1 -Og
