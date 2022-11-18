@@ -1,6 +1,6 @@
 #include <iostream>
-#include <fstream> /*библиотека, включающа€ набор классов, методов и функций, которые предоставл€ют интерфейс
-дл€ чтени€/записи данных из/в файл.*/
+#include <fstream> /*a library that includes a set of classes, methods, and functions that provide an interface
+for reading/writing data from/to a file.*/
 #include <cmath>
 
 void show_meminfo()
