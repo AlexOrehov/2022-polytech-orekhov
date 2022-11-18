@@ -1,21 +1,24 @@
 #include <iostream>
-#include <fstream>
+#include <fstream> /*библиотека, включающа€ набор классов, методов и функций, которые предоставл€ют интерфейс
+дл€ чтени€/записи данных из/в файл.*/
 #include <cmath>
 
 void show_meminfo()
 {
     char parameter[20];
-    int value;
-    char unit[3];
+    int value;   //amount of memory
+    char unit[3];  //measurements
     int total, free, avail;
 
-    std::ifstream in("/proc/meminfo", std::ios_base::in);
-    if (in.is_open()) {
+    std::ifstream in("/proc/meminfo", std::ios_base::in); //looking for meminfo
+    if (in.is_open()) 
+    {
         in >> parameter >> total >> unit;
         in >> parameter >> free >> unit;
         in >> parameter >> avail >> unit;
     }
-    else {
+    else 
+    {
         exit(1);
     }
 
