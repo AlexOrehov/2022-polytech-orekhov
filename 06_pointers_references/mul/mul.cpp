@@ -3,8 +3,7 @@
 #include <cstdlib>
 #include <cstring>
 
-unsigned int length(const char* str)
-{
+unsigned int length(const char* str) {
     if (!str)
         return 0;
     const char* end = str;
@@ -13,14 +12,12 @@ unsigned int length(const char* str)
     return end - str;
 }
 
-const char* itos(int N)
-{
+const char* itos(int N) {
     if (!N)
         return "0";
     int m = N;
     int digit = 0;
-    while (m)
-    {
+    while (m) {
         digit++;
         m /= 10;
     }
@@ -28,22 +25,19 @@ const char* itos(int N)
     char arr1[digit];
     arr = (char*)malloc(digit);
     int index = 0;
-    while (N)
-    {
+    while (N) {
         arr1[++index] = N % 10 + '0';
         N /= 10;
     }
     int i;
-    for (i = 0; i < index; i++)
-    {
+    for (i = 0; i < index; i++) {
         arr[i] = arr1[index - i];
     }
     arr[i] = '\0';
     return (const char*)arr;
 }
 
-const char* mul(const char* fst, const char* snd)
-{
+const char* mul(const char* fst, const char* snd) {
     int fsti = 0, sndi = 0;
     for (int i = 0, mult = 1; i != length(fst); ++i, mult *= 10)
         fsti += (fst[i] - '0') * mult;
@@ -52,10 +46,9 @@ const char* mul(const char* fst, const char* snd)
     return itos((fsti * sndi));
 }
 
-int main()
-{
-    assert(strcmp(mul("5", "2"), "10") == 0);
-    assert(strcmp(mul("0", "1"), "0") == 0);
-    assert(strcmp(mul("99", "99"), "9801") == 0);
+int main() {
+    assert(strcmp(mul("3", "2"), "6") == 0);
+    assert(strcmp(mul("19", "0"), "0") == 0);
+    assert(strcmp(mul("33", "33"), "1089") == 0);
     return 0;
 }
