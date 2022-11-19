@@ -2,9 +2,6 @@
 
 void print()
 {
-	int main() 
-	{
-		std::cout << "hello world" << std::endl;
-		return 0
-	}
+std::cout << "hello world"\n << std::endl;
+
 }
