@@ -3,9 +3,13 @@
 Вывод
 
 Person::ctor
+
 Teacher::ctor
+
 Student::ctor
+
 TA::ctor
+
 2
 5
 DefaultName
@@ -14,6 +18,7 @@ TA::dtor
 Student::dtor
 Teacher::dtor
 Person::dtor
+
 Множественное наследование
 
 Вывод
