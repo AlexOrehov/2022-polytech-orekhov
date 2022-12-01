@@ -1,16 +1,15 @@
 #include <iostream>
+using namespace std;
 int search(int arr[], int n, int x, int result[])
 {
-    int k = 0;
-    for (int i = 0; i < n + 1; ++i)
+    int a = 0;
+    for (int i = 0; i <= n; i++)
     {
         if (arr[i] == x)
         {
-            result[k] = i;
-            k = k + 1;
+            result[a] = i;
+            a++;
         }
-        if (i == n)
-            return k;
     }
-    return -1;
+    return a;
 }
