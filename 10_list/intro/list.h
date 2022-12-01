@@ -6,7 +6,8 @@ using namespace std;
 
 
 template <typename T> struct Node
-{ // Node Structure
+{ 
+    // Node Structure
     T data;
     Node* next;
 
