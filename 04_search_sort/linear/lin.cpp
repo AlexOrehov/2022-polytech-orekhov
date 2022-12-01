@@ -4,25 +4,16 @@
 
 int main()
 {
-    int x;
-    int arr[] = { 11, 222, 55, 55, 55 };
-    cout << "Number:" << endl;
-    cin >> x;
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int result[] = { 7, 9, 17, 17, 27 };
-
-    int num = count(arr, n, x, result);
-    if (num == -1)
+    int m[11] = { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 19 };
+    const int arrsize = sizeof(m) / sizeof(m[0]); // finding the length of the array
+    int result[arrsize]; // creating the result array and filling it with zeros
+    for (int i = 0; i < arrsize; ++i)
     {
-        cout << "Number is not present in array" << endl;
+        result[i] = 0;
     }
-    else
+    cout << "Count: " << search(m, arrsize, 19, result) << endl << "id : " << endl; // we output the number of found elements and their numbers
+    for (int i = 0; i < arrsize; ++i)
     {
-        cout << "There are " << num << " numbers" << endl;
-        cout << "Their indexes are " << endl;
-        for (int s = 0; s < num; s++)
-            cout << result[s] << endl;
+        cout << result[i] << endl;
     }
-    system("pause");
-    return 0;
 }
